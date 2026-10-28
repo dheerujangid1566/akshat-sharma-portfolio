@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshat Sharma — BTech Student & Developer</title>
+  <meta name="description" content="Portfolio of Akshat Sharma, BTech student building for the web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo">akshat<span>.</span></a>
+    <nav>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="eyebrow reveal">Hi, I'm</p>
+      <h1 class="hero-title reveal">Akshat <span class="gradient-text">Sharma</span></h1>
+      <p class="hero-sub reveal">BTech student turning curiosity into code — <span class="typed" data-words='["web apps.","3D experiences.","clean APIs.","things that ship."]'></span><span class="caret">|</span></p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about"><span></span></a>
+  </section>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="about-img reveal-left">
+        <img src="https://picsum.photos/seed/akshat-portrait/600/720" alt="Portrait placeholder" loading="lazy" />
+        <div class="img-ring"></div>
+      </div>
+      <div class="about-text reveal-right">
+        <h2 class="section-title"><span>01.</span> About me</h2>
+        <p>I'm Akshat, a BTech student who loves building things for the web. I spend my time between lectures and late-night side projects, learning how good software is designed, built and shipped.</p>
+        <p>Right now I'm deep into full-stack JavaScript, creative coding with Three.js, and the fundamentals that make systems fast and reliable.</p>
+        <div class="stats">
+          <div class="stat"><strong data-count="15">0</strong><span>Projects built</span></div>
+          <div class="stat"><strong data-count="8">0</strong><span>Technologies</span></div>
+          <div class="stat"><strong data-count="500">0</strong><span>Commits / year</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span>02.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--d:0s"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>HTML, CSS, JavaScript, React, responsive design, animation.</p></div>
+        <div class="skill-card reveal" style="--d:.1s"><div class="skill-icon">⛁</div><h3>Backend</h3><p>Node.js, Express, REST APIs, MongoDB, SQL basics.</p></div>
+        <div class="skill-card reveal" style="--d:.2s"><div class="skill-icon">◈</div><h3>Creative</h3><p>Three.js, WebGL shaders, canvas, motion design.</p></div>
+        <div class="skill-card reveal" style="--d:.3s"><div class="skill-icon">⚙</div><h3>Core CS</h3><p>Data structures, algorithms, C++, Python, Git.</p></div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>JavaScript</span><span>React</span><span>Node.js</span><span>Three.js</span><span>Python</span><span>C++</span><span>MongoDB</span><span>Git</span><span>Tailwind</span><span>SQL</span>
+          <span>JavaScript</span><span>React</span><span>Node.js</span><span>Three.js</span><span>Python</span><span>C++</span><span>MongoDB</span><span>Git</span><span>Tailwind</span><span>SQL</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title reveal"><span>03.</span> Projects</h2>
+      <div class="projects-grid">
+        <article class="project reveal" style="--d:0s">
+          <div class="project-img"><img src="https://picsum.photos/seed/akshat-p1/800/500" alt="Campus Connect preview" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Campus Connect</h3>
+            <p>A student forum for sharing notes, events and doubts across branches.</p>
+            <ul class="tags"><li>React</li><li>Node</li><li>MongoDB</li></ul>
+          </div>
+        </article>
+        <article class="project reveal" style="--d:.1s">
+          <div class="project-img"><img src="https://picsum.photos/seed/akshat-p2/800/500" alt="Orbit Visualizer preview" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Orbit Visualizer</h3>
+            <p>An interactive 3D solar-system simulation built with Three.js.</p>
+            <ul class="tags"><li>Three.js</li><li>WebGL</li></ul>
+          </div>
+        </article>
+        <article class="project reveal" style="--d:.2s">
+          <div class="project-img"><img src="https://picsum.photos/seed/akshat-p3/800/500" alt="Expense Tracker preview" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Pocket Ledger</h3>
+            <p>A minimal expense tracker with charts and monthly budgets.</p>
+            <ul class="tags"><li>JavaScript</li><li>Chart.js</li></ul>
+          </div>
+        </article>
+        <article class="project reveal" style="--d:.3s">
+          <div class="project-img"><img src="https://picsum.photos/seed/akshat-p4/800/500" alt="DSA Tracker preview" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>DSA Streak</h3>
+            <p>Tracks daily problem-solving with streaks and topic heatmaps.</p>
+            <ul class="tags"><li>Express</li><li>SQL</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <h2 class="section-title reveal"><span>04.</span> Journey</h2>
+      <ol class="timeline">
+        <li class="reveal-left"><time>2026</time><h3>Building in public</h3><p>Shipping full-stack and 3D web projects, contributing to open source.</p></li>
+        <li class="reveal-right"><time>2025</time><h3>Full-stack deep dive</h3><p>Learned Node, databases and deployment; built my first real apps.</p></li>
+        <li class="reveal-left"><time>2024</time><h3>Started BTech</h3><p>Began computer science studies and wrote my first lines of C++.</p></li>
+      </ol>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="gallery">
+        <img class="reveal" style="--d:0s" src="https://picsum.photos/seed/akshat-g1/500/500" alt="" loading="lazy" />
+        <img class="reveal" style="--d:.1s" src="https://picsum.photos/seed/akshat-g2/500/500" alt="" loading="lazy" />
+        <img class="reveal" style="--d:.2s" src="https://picsum.photos/seed/akshat-g3/500/500" alt="" loading="lazy" />
+        <img class="reveal" style="--d:.3s" src="https://picsum.photos/seed/akshat-g4/500/500" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title reveal"><span>05.</span> Let's talk</h2>
+      <p class="contact-lead reveal">Open to internships, collaborations and interesting problems.</p>
+      <a class="btn btn-primary big reveal" href="mailto:akshat@fullstacklearning.com">akshat@fullstacklearning.com</a>
+      <div class="socials reveal">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akshat Sharma. Built with HTML, CSS, JS & Three.js.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
